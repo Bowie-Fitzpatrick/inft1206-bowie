@@ -18,43 +18,92 @@ Adding structural elements to birdwatching website.
   <body>
     <!--Add header-->
     <!--Add image in h1 element-->
-    <h1>Birdwatching</h1>
+    <header>
+        <h1>
+            Birdwatching
+            <img
+                src="https://mdn.github.io/shared-assets/images/examples/learn/birds/dove.png"
+                alt="" />
+        </h1>
 
     <!--Add nav menu marked up as unordered list-->
     <!--Wrap text in <a> element-->
-    Home Get started Photos Gear Forum
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Get started</a>
+                </li>
+                <li>
+                    <a href="#">Photos</a>
+                </li>
+                <li>
+                    <a href="#">Gear</a>
+                </li>
+                <li>
+                    <a href="#">Forum</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <!--Add main content seection-->
     <!--Add article-->
-    <h2>Welcome</h2>
+    <main>
+        <article>
+            <h2>Welcome</h2>
 
-    <p>
-      Welcome to our fake birdwatching site. If this were a real site, it
-      would be the ideal place to come to learn more about birdwatching,
-      whether you are a beginner looking to learn how to get into birding, or
-      an expert wanting to share ideas, tips, and photos with other
-      like-minded people.
-    </p>
+            <p>
+                Welcome to our fake birdwatching site. If this were a real site, it
+                would be the ideal place to come to learn more about birdwatching,
+                whether you are a beginner looking to learn how to get into birding, or
+                an expert wanting to share ideas, tips, and photos with other
+                like-minded people.
+            </p>
+                So don't waste time! Get what you need, then turn off that computer and
+                get out into the great outdoors!
+            <p>
 
-    <p>
-      So don't waste time! Get what you need, then turn off that computer and
-      get out into the great outdoors!
-    </p>
+            </p>
+        </article>
 
     <!--Add aside content section-->
-    <h2>Favorite photos</h2>
+        <aside>
+            <h2>Favorite photos</h2>
     <!--Replace comment below with four thumbnail images-->
     <!-- Link images here. -->
+            <a href="https://mdn.github.io/shared-assets/images/examples/learn/birds/favorite-bird-1.jpg">
+                <img src="https://mdn.github.io/shared-assets/images/examples/learn/birds/favorite-bird-1_th.jpg"
+                     alt="A black bird sitting on a twig." />
+            </a>
+            <a href="https://mdn.github.io/shared-assets/images/examples/learn/birds/favorite-bird-2.jpg">
+                <img src="https://mdn.github.io/shared-assets/images/examples/learn/birds/favorite-bird-2_th.jpg"
+                     alt="A peacock." />
+            </a>
+            <a href="https://mdn.github.io/shared-assets/images/examples/learn/birds/favorite-bird-3.jpg">
+                <img src="https://mdn.github.io/shared-assets/images/examples/learn/birds/favorite-bird-3_th.jpg"
+                     alt="A white bird with a long beak." />
+            </a>
+            <a href="https://mdn.github.io/shared-assets/images/examples/learn/birds/favorite-bird-4.jpg">
+                <img src="https://mdn.github.io/shared-assets/images/examples/learn/birds/favorite-bird-4_th.jpg"
+                     alt="A white bird with black wings." />
+            </a>
+        </aside>
+    </main>
 
     <!--Add footer-->
-    <p>
-      This fake website example is CC0 — any part of this code may be reused
-      in any way you wish. Original example written by Chris Mills, 2016.
-    </p>
+    <footer>
+        <p>
+            This fake website example is CC0 — any part of this code may be reused
+            in any way you wish. Original example written by Chris Mills, 2016.
+        </p>
 
-    <p>
-      <a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a>
-      by Lorc.
-    </p>
+        <p>
+            <a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a>
+            by Lorc.
+        </p>
+    </footer>
   </body>
 </html>
