@@ -22,6 +22,7 @@ Making a table for planet data.
         <caption>
             Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
         </caption>
+    <!--Add a black border around the column that contains the planet name row headers-->
         <colgroup>
             <col span="2"/>
             <col class="column-border"/>
@@ -29,19 +30,59 @@ Making a table for planet data.
         </colgroup>
         <thead>
     <!--Add a row to the header containing all column headers-->
-
+            <tr>
+                <td colspan="2"></td>
+                 <td colspan="2"></td>
+                 <th scope="col">Name</th>
+                 <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                 <th scope="col">Diameter (km)</th>
+                 <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                 <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                 <th scope="col">Length of day (hours)</th>
+                 <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+                 <th scope="col">Mean temperature (°C)</th>
+                 <th scope="col">Number of moons</th>
+                 <th scope="col">Notes</th>
+            </tr>
         </thead>
         <tbody>
     <!--Create content rows and make row headings-->
-    
-        </tbody>
     <!--Place content in the cells of the table-->
-
     <!--Add attributes to make the row and column headers associate with the rows and columns they act as headings for-->
+            <tr>
+                <th rowspan="4" colspan="2">Terrestrial planets</th>
+                <th>Mercury</th>
 
-    <!--Add a black border around the column that contains the planet name row headers-->
-
+            </tr>
+            <tr>
+                <th>Venus</th>
+            </tr>
+            <tr>
+                <th>Earth</th>
+            </tr>
+            <tr>
+                <th>Mars</th>
+            </tr>
+            <tr>
+                <th rowspan="4">Jovian planets</th>
+                <th rowspan="2">Gas giants</th>
+                <th>Jupiter</th>
+            </tr>
+            <tr>
+                <th>Saturn</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Ice giant</th>
+                <th>Uranus</th>
+            </tr>
+            <tr>
+                <th>Neptune</th>
+            </tr>
+            <tr>
+                <th colspan="2">Dwarf planets</th>
+                <th>Pluto</th>
+            </tr>
+        </tbody>
     </table>
-
   </body>
 </html>
