@@ -29,9 +29,17 @@ h1 {
 }
 
 /* Make heading 2 italic and give it a font size of 1.5rem */
+h2 {
+    font-style: italic;
+    font-size: 1.5rem;
+}
 
 /* Select the div using a class selector and give it a
     colour of darkslategray and a bold font weight */
+.jobtitle {
+    color: darkslategray;
+    font-weight: bold;
+}
 
 /* Give the ul used for the contact details a background
     colour of white, and a 5px solid purple border on all
