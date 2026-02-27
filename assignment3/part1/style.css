@@ -22,6 +22,11 @@ body {
     uses the CSS color keyword purple */
 
 /* Make heading 1 have a font size of 2rem */
+h1 {
+    color: darkslategray;
+    border-bottom: 10px dotted purple;
+    font-size: 2rem;
+}
 
 /* Make heading 2 italic and give it a font size of 1.5rem */
 
