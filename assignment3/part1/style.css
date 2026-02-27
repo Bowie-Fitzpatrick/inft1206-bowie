@@ -46,11 +46,24 @@ h2 {
     sides. Give the ul padding of 30px in all sides */
 
 /* Give the ul a border radius of 20px */
+ul {
+    background-color: white;
+    border: 5px solid purple;
+    padding: 30px;
+    border-radius: 20px;
+}
 
 /* Make the links green */
+a {
+    color: green;
+}
 
 /* Make the links darkgreen while hovered over with the
     mouse or focused via keyboard */
 
 /* Make the links lose their underline while hovered or
     focused */
+a:hover, a:focus {
+    color: darkgreen;
+    text-decoration: none;
+}
