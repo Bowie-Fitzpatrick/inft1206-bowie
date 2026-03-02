@@ -33,3 +33,74 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Apply fonts to the page */
+/* Choose heading and body fonts to apply to the page. */
+
+/* Apply body font to the whole page and your heading
+    font to your headings. */
+
+
+/* General text styling */
+/* Give headings and other element types appropriate
+    font-sizes defined using a suitable relative
+    unit. */
+
+
+/* Give body text a suitable line-height. */
+
+
+/* Center top level heading on the page. */
+
+
+/* Remove the bottom margin from second-level headings. */
+
+
+/* Give headings and body text some letter-spacing
+    to make them not too squashed. */
+
+
+/* Give the first paragraph after each heading in
+    the <section> 2rem. */
+
+
+/* Link styling */
+/* Give the link, visited, focus, and hover states
+    some colors that go with the color of the
+    horizontal bars at the top and bottom of the
+    page. */
+
+/* Make it so that links are underlined by default,
+    when you hover or focus them the underline
+    disappears. */
+    
+/* Remove the default focus outline from all links
+    on the page. */
+
+/* Make it so that external links have the external
+    link icon inserted into the right of them. */
+
+/* List styling */
+/* Make sure the spacing of the lists and list items
+    works well with the styling of the page. Each
+    list should have the same line-height and top
+    and bottom margin as the paragraphs. */
+
+/* Give the list items appropriate bullet styles for
+    the design of the page. */
+
+/* Nav menu styling */
+/* Make the links look like buttons which are as
+    wide as the column they are in, and tall
+    enough that the nav items fill a decent amount
+    of space. */
+
+/* Apply the same font to the nav link as applied
+    to the headings. */
+
+/* Make sure the hit area of each link is expanded
+    to fill the entirety of its parent list item. */
+
+/*Center the text inside each link. */
+
+/* Uppercase the text */
