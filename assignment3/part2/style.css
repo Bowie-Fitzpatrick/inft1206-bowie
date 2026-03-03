@@ -1,3 +1,11 @@
+/*
+Name: Bowie Fitzpatrick
+File: style.css
+Date: 3rd March 2026
+Text styling a community school homepage
+*/
+
+
 /* General setup */
 
 * {
@@ -36,10 +44,17 @@ footer p {
 
 /* Apply fonts to the page */
 /* Choose heading and body fonts to apply to the page. */
+@import "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap";
 
 /* Apply body font to the whole page and your heading
     font to your headings. */
+html {
+  font-family: "PT Serif", serif;
+}
 
+h1, h2 {
+  font-family: "Dm Serif Display", serif;
+}
 
 /* General text styling */
 /* Give headings and other element types appropriate
