@@ -81,6 +81,9 @@ nav a {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 3fr 3fr;
 }
 
 /* Cause the feature image inside the
