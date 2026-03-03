@@ -60,30 +60,40 @@ h1, h2 {
 /* Give headings and other element types appropriate
     font-sizes defined using a suitable relative
     unit. */
-
-
-/* Give body text a suitable line-height. */
-
-
-/* Center top level heading on the page. */
-
-
-/* Remove the bottom margin from second-level headings. */
-
-
 /* Give headings and body text some letter-spacing
     to make them not too squashed. */
+/* Center top level heading on the page. */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
 
+/* Remove the bottom margin from second-level headings. */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+/* Give body text a suitable line-height. */
+p, li {
+  line-height: 1.3;
+  letter-spacing: 0.4px;
+}
 
 /* Give the first paragraph after each heading in
     the <section> 2rem. */
-
+section h2 + p {
+  text-indent: 2rem;
+}
 
 /* Link styling */
 /* Give the link, visited, focus, and hover states
     some colors that go with the color of the
     horizontal bars at the top and bottom of the
     page. */
+
 
 /* Make it so that links are underlined by default,
     when you hover or focus them the underline
