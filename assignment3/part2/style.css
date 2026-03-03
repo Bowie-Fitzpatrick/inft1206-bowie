@@ -93,17 +93,31 @@ section h2 + p {
     some colors that go with the color of the
     horizontal bars at the top and bottom of the
     page. */
-
+a:link, a:visited {
+  color: #aa6666
+}
 
 /* Make it so that links are underlined by default,
     when you hover or focus them the underline
     disappears. */
+a:focus, a:hover {
+  color:#773445;
+  text-decoration: none;
+}
     
 /* Remove the default focus outline from all links
     on the page. */
+a {
+  outline: none;
+}
 
 /* Make it so that external links have the external
     link icon inserted into the right of them. */
+a[href*="http"] {
+  background: url("external-link-52.png") no-repeat right center;
+  padding-right: 15px;
+  background-size: 13px 13px;
+}
 
 /* List styling */
 /* Make sure the spacing of the lists and list items
