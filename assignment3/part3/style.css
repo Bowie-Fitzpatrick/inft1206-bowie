@@ -1,3 +1,10 @@
+/*
+Name: Bowie Fitzpatrick
+File: style.css
+Date: 3rd March 2026
+Creating a layout for a website
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -22,16 +29,31 @@ img {
   max-width: 980px;
 }
 
+/* Display <article> and <aside> elements as
+    two column layout, with the former three
+    times as wide as the latter. The columns
+    should be a flexible size so that if the
+    browser window gets narrower, the columns
+    become narrower. Include a 20 pixel gap
+    between the two columns. */
 .grid {
   margin: 0 auto;
   max-width: 980px;
 }
 
+/* Style the navigation bar so it scrolls
+    with the content normally but then
+    becomes stuck at the top of the
+    viewport when it reaches it. */
 nav {
   background-color: black;
   padding: 0.5em;
 }
 
+/* Display the navigation items in a row,
+    with an equal amount of space between
+    the items and a smaller amount of
+    space at either end of the row. */
 nav ul {
   margin: 0;
   padding: 0;
@@ -44,12 +66,21 @@ nav a {
   padding: 0.5em 1em;
 }
 
+/* The photographs should display as a
+    two-column grid with equal-sized
+    columns and a 5-pixel gap between
+    the images. */
 .photos {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/* Cause the feature image inside the
+    article to have text wrapped around
+    it to the right and bottom, with a
+    suitable amount of space between the
+    image and the text. */
 .feature {
   width: 200px;
 }
