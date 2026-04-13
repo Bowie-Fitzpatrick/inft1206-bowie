@@ -14,32 +14,29 @@ const images = [
 ];
 
 // Add the images to the thumbnail bar
-
-
 // Create a constant called baseURL
-
+const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
 
 // Create a for of loop
+for (const image of images) {
+    // Create a new <img> element for each image
+    const newImage = document.createElement("img");
 
+    // Set the <img> source equal to the URL of the image
+    newImage.src = `${baseURL}${image.filename}`;
+    newImage.alt = image.alt;
 
-// Create a new <img> element for each image
+    // Make the images focusable via keyboard
+    newImage.tabIndex = "0";
 
+    // Append <img> to thumbBar
+    thumbBar.appendChild(newImage);
 
-// Set the <img> source equal to the URL of the image
-
-
-// Make the images focusable via keyboard
-
-
-// Append <img> to thumbBar
-
-
-// Add a click event to the <img> so that when it is clicked it calls a function called updateDisplayedImage()
-
+    // Add a click event to the <img> so that when it is clicked it calls a function called updateDisplayedImage()
+    newImage.addEventListener("click", updateDisplayedImage);
+}
 
 // Create updateDisplayedImage()
-
-
 // Wire up the Darken/Lighten button
 
 
