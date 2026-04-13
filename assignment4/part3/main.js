@@ -28,9 +28,14 @@ class Ball {
     this.color = color;
     this.size = size;
   }
+  // Drawing the ball
+  draw() {
+    ctx.beginPath();
+    ctx.filleStyle = this.color;
+    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+    ctx.fill();
+  }
 }
-
-// Drawing the ball
 
 
 // Updating the ball's data
