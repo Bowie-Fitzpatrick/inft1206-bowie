@@ -17,3 +17,17 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
+
+// Modelling the ball
+
+
+// Drawing the ball
+
+
+// Updating the ball's data
+
+
+// Animating the ball
+
+
+// Adding collision detection
