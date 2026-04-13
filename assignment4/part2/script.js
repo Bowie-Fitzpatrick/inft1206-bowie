@@ -37,13 +37,27 @@ for (const image of images) {
 }
 
 // Create updateDisplayedImage()
+function updateDisplayedImage(e) {
+    displayedImage.src = e.target.src;
+    displayedImage.alt = e.target.src;
+}
+
 // Wire up the Darken/Lighten button
-
-
 // Add a click event to the <button> with an anonymous function
+btn.addEventListener("click", () => {
+    // If the <button> has a class of dark when clicked, change its text content to Lighten
+    if (btn.classList.contains("dark")) {
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgb(0 0 0 /0.5)";
+    // If the <button> does not have a class of dark when clicked, change its text content to Darken
+    } else {
+        btn.textContent = "Darken";
+        overlay.style.backgroundColor = "rgb(0 0 0 /0)";
+    }
+    btn.classList.toggle("dark");
+});
 
 
-// If the <button> has a class of dark when clicked, change its text content to Lighten
 
 
-// If the <button> does not have a class of dark when clicked, change its text content to Darken
+
