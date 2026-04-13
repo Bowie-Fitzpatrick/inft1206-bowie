@@ -43,6 +43,7 @@ function returnRandomStoryString() {
 // Event listener and partial generate function definition
 
 generateBtn.addEventListener("click", generateStory);
+    let newStory = returnRandomStoryString
 
 function generateStory() {
   if (customName.value !== "") {
