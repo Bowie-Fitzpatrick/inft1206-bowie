@@ -13,25 +13,28 @@ Structuring a feedback form.
     <script defer src="index.js"></script>
   </head>
   <body>
-    We want your feedback!
+    <h1>We want your feedback!</h1>
 
     <!--The opening paragraph below the top-level heading needs to be marked 
     up appropriately.-->
     <!--Also in the opening paragraph, turn the text "little house in the 
     woods" and "prize draw" into links. We don't have pages to link to 
     yet, so for now, just set the target URL as # for a placeholder.-->
-    We're very excited that you visited the little house in the woods,
-    and we want to hear what you thought of it! Please fill in the below
-    sections. You don't need to provide your name or contact details, but
-    if you do, we'll enter you into a prize draw where you'll have a chance
-    to win prizes.
+    <p>
+        We're very excited that you visited the <a href="#">little house in 
+        the woods</a>, and we want to hear what you thought of it! Please 
+        fill in the below sections. You don't need to provide your name or 
+        contact details, but if you do, we'll enter you into a <a href="#">
+        prize draw</a> where you'll have a chance to win prizes.
+    </p>
+
     <!--We want you to place a wide, flat image below the opening paragraph 
     as a decoration. The image path is 
     https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg,
     and we'd like you to set the alternative text for it to an empty value, given 
     that it is decorative only.-->
+    <img src="https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg" alt=""/>
 
-    --
     <!--Wrap the form in a suitable wrapper element to specify the whole thing 
     as a form.-->
     <!--Add repeating structural elements inside the form, to wrap each form 
@@ -43,7 +46,6 @@ Structuring a feedback form.
     the control/label pairs to make them sit on their own separate lines.-->
     <!--Add a line break element between the multi-line text entry box and 
     its label to make the two sit on separate lines.-->
-
     <!--There are several headings in the text that need marking up with 
     suitable elements:
     The top level-heading: "We want your feedback!".
@@ -135,24 +137,23 @@ Structuring a feedback form.
             </fieldset>
         </div>
 
-    --
+        <div class="form-section">
+            <h2>About your hosts</h2>
+                <!--In the "About your hosts" section, turn both sets of lines into a 
+                drop-down menu of options, with a label to describe each one.-->
+                Who's your favorite bear?
+                Papa bear
+                Mama bear
+                Junior
+                Dozer
 
-    About your hosts
-    <!--In the "About your hosts" section, turn both sets of lines into a 
-    drop-down menu of options, with a label to describe each one.-->
-    Who's your favorite bear?
-    Papa bear
-    Mama bear
-    Junior
-    Dozer
+                Which greeting did you prefer?
+                Wave
+                Friendly greeting
+                Growl
+                Claw marks in the door
+        </div>
 
-    Which greeting did you prefer?
-    Wave
-    Friendly greeting
-    Growl
-    Claw marks in the door
-
-    --
     <!--In the "Any other feedback?" section, add a multi-line text entry 
     box and turn the existing line into its descriptive label.-->
         <div class="form-section">
