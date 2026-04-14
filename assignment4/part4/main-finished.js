@@ -154,15 +154,22 @@ while (balls.length < 25) {
 }
 
 // Bring EvilCircle into the program
+const EvilCircles = new EvilCircle(10, 10);
+
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if(ball.exists === true) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
   }
+  EvilCircles.draw();
+  EvilCircles.checkBounds();
+  EvilCircles.collisionDetect();
 
   requestAnimationFrame(loop);
 }
