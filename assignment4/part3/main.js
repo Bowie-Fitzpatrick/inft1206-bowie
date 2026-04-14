@@ -31,7 +31,7 @@ class Ball {
   // Drawing the ball
   draw() {
     ctx.beginPath();
-    ctx.filleStyle = this.color;
+    ctx.fillStyle = this.color;
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
   }
@@ -90,7 +90,7 @@ while (balls.length < 25) {
 }
 
 function loop() {
-  ctx.fillSytle = "rgb(0 0 0 / 25%)";
+  ctx.fillStyle = "rgb(0 0 0 / 25%)";
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
