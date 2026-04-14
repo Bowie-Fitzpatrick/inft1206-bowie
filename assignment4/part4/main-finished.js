@@ -22,6 +22,29 @@ class Shape {
   }
 }
 // Create EvilCircle class
+class EvilCircle extends Shape {
+  constructor(x, y) {
+    super(x, y, 20, 20);
+    this.color = "rgb(255, 255, 255, 255)";
+    this.size = 10;
+    window.addEventListener("keydown", (e) => {
+      switch (e.key) {
+        case "a":
+          this.x -= this.velX;
+          break;
+        case "d":
+          this.x += this.velX;
+          break;
+        case "w":
+          this.y -= this.velY;
+          break;
+        case "s":
+          this.y += this.velY;
+          break;
+      }
+    });
+  }
+}
 
 //Define methods for EvilCircle
 
