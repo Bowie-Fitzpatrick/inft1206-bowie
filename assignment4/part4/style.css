@@ -25,3 +25,10 @@ h1 {
 }
 
 /* Add rule for score counter */
+p {
+  position: absolute;
+  margin: 0;
+  top: 35px;
+  right: 5px;
+  color: #aaaaaa;
+}

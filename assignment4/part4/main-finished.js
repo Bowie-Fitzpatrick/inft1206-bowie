@@ -4,6 +4,8 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+const score = document.querySelector("p");
+
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -11,6 +13,8 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
+
+let ballsAmount = 0;
 
 // Create a Shape class
 class Shape {
@@ -78,6 +82,8 @@ class EvilCircle extends Shape {
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          ballsAmount -= 1;
+          score.textContent = `Ball count: ${ballsAmount}`;
         }
       }
     }
@@ -91,6 +97,8 @@ class Ball extends Shape {
     this.color = color;
     this.size = size;
     this.exists = true;
+    ballsAmount += 1;
+    score.textContent = `Ball count: ${ballsAmount}`;
   }
 
   draw() {
