@@ -139,19 +139,26 @@ Structuring a feedback form.
 
         <div class="form-section">
             <h2>About your hosts</h2>
-                <!--In the "About your hosts" section, turn both sets of lines into a 
-                drop-down menu of options, with a label to describe each one.-->
-                Who's your favorite bear?
-                Papa bear
-                Mama bear
-                Junior
-                Dozer
-
-                Which greeting did you prefer?
-                Wave
-                Friendly greeting
-                Growl
-                Claw marks in the door
+    <!--In the "About your hosts" section, turn both sets of lines into a 
+    drop-down menu of options, with a label to describe each one.-->
+            <div class="separator">
+                <label for="favorite">Who's your favorite bear?</label>
+                <select name="favorite" id="favorite">
+                    <option value="papa">Papa bear</option>
+                    <option value="mama">Mama bear</option>
+                    <option value="junior">Junior</option>
+                    <option value="randy">Cousin Randy</option>
+                </select>
+            </div>
+            <div class="separator">
+                <label for="greeting">Which greeting did you prefer?</label>
+                <select name="greeting" id="greeting">
+                    <option value="papa">Wave</option>
+                    <option value="mama">Friendly greeting</option>
+                    <option value="junior">Growl</option>
+                    <option value="randy">Claw marks in the door</option>
+                </select>
+            </div>
         </div>
 
     <!--In the "Any other feedback?" section, add a multi-line text entry 
@@ -163,7 +170,7 @@ Structuring a feedback form.
             <textarea id="comments" name="comments"></textarea>
         </div>
 
-        <!--In the "Your details" section, add a suitable type of text input 
+    <!--In the "Your details" section, add a suitable type of text input 
     to collect each of the three listed values. Turn the existing lines 
     into their labels.-->
         <div class="form-section">
